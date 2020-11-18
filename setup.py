@@ -8,7 +8,7 @@ requirements = ["jaeger-client>=4.3.0",
 
 setup(
     name="jaeger_logger_reporter",
-    version="0.0.7",
+    version="0.0.8",
     author="Cristiano Alves",
     author_email="cristiano.f.t.alves@gmail.com",
     description="Jaeger Logger Reporter",

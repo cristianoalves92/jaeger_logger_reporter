@@ -152,7 +152,6 @@ class LoggerTracerReporter(NullReporter):
                 timestamp = timestamp / 1000000
                 date = LoggerTracerReporter._span_date(timestamp)
         span_identifier = f'{parent}{self.span_identifier(span)}'
-        print(date)
         self.logger.log(level, '%s', message, extra={
                         'date': date, 'span': span_identifier, 'event': event})
 
