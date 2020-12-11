@@ -147,7 +147,7 @@ class LoggerTracerReporter(NullReporter):
         else:
             try:
                 date = LoggerTracerReporter._span_date(timestamp)
-            except ValueError:
+            except (ValueError, OSError):
                 # for some reason the timestamp comes from log it's not a float
                 timestamp = timestamp / 1000000
                 date = LoggerTracerReporter._span_date(timestamp)
